@@ -1,0 +1,136 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+    color: #fff;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+}
+
+.container {
+    max-width: 800px;
+    width: 100%;
+}
+
+h1 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    background: linear-gradient(45deg, #667eea 0%, #764ba2 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.subtitle {
+    text-align: center;
+    color: #a0a0a0;
+    margin-bottom: 3rem;
+    font-size: 1rem;
+}
+
+.featured-country {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    padding: 3rem;
+    text-align: center;
+    margin-bottom: 2rem;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+}
+
+.featured-country .flag {
+    font-size: 5rem;
+    margin-bottom: 1rem;
+}
+
+.featured-country .country-name {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+.featured-country .time {
+    font-size: 1.2rem;
+    color: #a0a0a0;
+}
+
+.other-countries {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 1rem;
+}
+
+.country-card {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    border-radius: 12px;
+    padding: 1.5rem;
+    text-align: center;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    transition: transform 0.2s, background 0.2s;
+}
+
+.country-card:hover {
+    transform: translateY(-5px);
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.country-card .flag {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.country-card .country-name {
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-bottom: 0.3rem;
+}
+
+.country-card .time {
+    font-size: 0.9rem;
+    color: #a0a0a0;
+}
+
+.loading {
+    text-align: center;
+    font-size: 1.5rem;
+    color: #a0a0a0;
+}
+
+.no-results {
+    text-align: center;
+    font-size: 1.2rem;
+    color: #a0a0a0;
+    margin-top: 2rem;
+}
+
+.group {
+    margin-bottom: 2.5rem;
+}
+
+.group-title {
+    font-size: 1.2rem;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    color: #a0a0a0;
+    margin-bottom: 0.75rem;
+    text-align: center;
+}
+
+.other-list {
+    color: #c9c9c9;
+    font-size: 0.95rem;
+    line-height: 1.5;
+    margin-top: 0.75rem;
+    text-align: center;
+}
